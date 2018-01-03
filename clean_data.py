@@ -5,7 +5,7 @@ from sklearn.preprocessing import Imputer
 def data_to_df(filename,file_extension,sep,sheet='',x):
     'this function read a files(csv,excel,table) and convert it into a pandas dataframe'
     if file_extension=='csv' or file_extension=='txt':
-        df=pd.read_file_extension(filename,sep=sep,skiprows=x,error_bad_lines=False)#multidelimeter files with information rows
+        df=pd.read_file_extension(filename,sep=sep,skiprows=x,error_bad_lines=False,low_memory=False)#multidelimeter files with information rows
     if file_extension=='xslx':
         df=pd.read_excel(filename, sheet_name=sheet)
     #df.drop('Unnamed: 0', axis=1, inplace=True)#drop first umpty column with NA or empty cells

@@ -49,7 +49,7 @@ def na_handeling(df,drop=True,impute=True,column_extension=''):
             data_clean=df.dropna()
             print ('The clean_dataframe size is: ',str(data_clean.shape))
             return clean_data
-        
+     #Amputation   
         else:
             my_imputation=Imputer(strategy='median')
             clean_data=my_imputation.fit_transform(df)

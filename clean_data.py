@@ -13,7 +13,7 @@ def data_to_df(filename,file_extension,sep,sheet='',x):
     print ('DataFrame from the ',filename,' has been created. Size= ',str(df.size),'.')
     return df
     
-def na_handeling(df,drop=True,impute=True,column_extension=''):
+def df_clean(df,drop=True,impute=True,column_extension=''):
     '''1-Check if the some columns are redundante, remove the duplication extension in the column name to find them and remove these columns
      2-Check if the dataset contains missing values if do get rid of them either by dropping them or imputing them
     '''

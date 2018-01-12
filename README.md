@@ -8,7 +8,7 @@ The aim of the project is performing Network based analysis of omics data. Hypot
 
 Clean_data.py: data cleaning
 
-Networkx.i.ipynb: Build a patient similarity network from mRNA expression data
+Networkx.i.ipynb: Build a patient similarity network from mRNA expression data and visualize a subpart using Networkx library
 
-igraph.i.ipynb: Build a patient similarity network from mRNA expression data
+igraph.i.ipynb: Build a patient similarity network from mRNA expression data and visualize a subpart using igraph library
 
